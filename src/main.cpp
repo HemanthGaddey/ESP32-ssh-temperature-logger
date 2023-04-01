@@ -11,7 +11,7 @@ TaskHandle_t sshHandle = NULL;
 const char* ssid = "IITBhilai";
 #define EAP_ID "gaddeyhemanth"
 #define EAP_USERNAME "gaddeyhemanth"
-#define EAP_PASSWORD "GAmaGey@gDRY@2"
+#define EAP_PASSWORD "xxxxxxxxxxxxx"
 
 #define DHTPin 32
 
@@ -24,7 +24,7 @@ void sshTask(void* pvParameter) {
 
   Serial.println("SSH Connecting to server...");
 
-  ssh.connectWithPassword("10.1.81.131", "gagan","Bhilai@IIT2022");
+  ssh.connectWithPassword("<Server ip address / hostname>", "<username>","<password>");
 
   if (ssh.isConnected) {
     Serial.println("SSH is connected!\n");
